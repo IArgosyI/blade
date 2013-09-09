@@ -166,7 +166,10 @@
 
     /* Give some space on the sides of the floated elements so text doesn't run right into it. */
     .featurette-image.pull-left {
-      margin-right: 40px;
+      display: block;
+        float: none;
+        max-width: 40%;
+        margin: 0 auto 20px;
     }
     .featurette-image.pull-right {
       margin-left: 40px;
@@ -174,7 +177,7 @@
 
     /* Thin out the marketing headings */
     .featurette-heading {
-      font-size: 25px;
+      font-size: 20px;
       font-weight: 300;
       line-height: 1;
       letter-spacing: -1px;
@@ -256,7 +259,7 @@
       }
 
       .featurette-heading {
-        font-size: 15px;
+        font-size: 20px;
       }
       .featurette .lead {
         font-size: 18px;
@@ -301,7 +304,7 @@
             <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
             <div class="nav-collapse collapse">
               <ul class="nav" style="width:90%">
-                <li ><a href="Mypage.html">MyPage</a></li>
+                <li class="active"><a href="Mypage.html">MyPage</a></li>
                 <li><a href="Profile.html">Profile</a></li>
                 <li><a href="AboutUs.html">AboutUs</a></li>
                 <!-- Read about Bootstrap dropdowns at http://twbs.github.com/bootstrap/javascript.html#dropdowns -->
@@ -323,95 +326,102 @@
 
 
 
-    <!-- Carousel
-    ================================================== -->
-    <div id="myCarousel" class="carousel slide">
-       <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner">
-      
-        <div class="item active" style="background-color:#FF6633">
-          <!--<img src="bootstrap/assets/img/top_1.jpg" alt="">-->
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Welcome to Blade</h1>
-              <p class="lead">Store your farvolite quote, Create your own , Share with community</p>
-              <a class="btn btn-large btn-primary" href="#">Sign up today</a>
-            </div>
-          </div>
-        </div>
-        <div class="item" style="background-color:#FFCC99">
-          <!--<img src="bootstrap/assets/img/top_2.jpg" alt="">-->
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Another example headline.</h1>
-              <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <a class="btn btn-large btn-primary" href="#">AboutUs</a>
-            </div>
-          </div>
-        </div>
-        <div class="item"style="background-color:#FF9966" >
-          <!--<img src="bootstrap/assets/img/top_3.jpg" alt="">-->
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>One more for good measure.</h1>
-              <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <a class="btn btn-large btn-primary" href="#">Browse Quote</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-      <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
-    </div><!-- /.carousel -->
-
+    
 
 
     <!-- Marketing messaging and featurettes
     ================================================== -->
     <!-- Wrap the rest of the page in another container to center all the content. -->
 
-    <div class="container marketing">
-      <a class="btn btn-large btn-primary" href="#" style="margin-left:85%" >NewQuote</a>  
-      <hr class="featurette-divider">
-
-      <div class="featurette">
+    <div class="container marketing" style="margin-top:100px">
+      <div class="row">
+        <div class="span4">
+          <div class="featurette">
+        
+            <img class="featurette-image  pull-left img-responsive" src="data:image/png;base64," data-src="holder.js/150x150/auto" alt="Generic placeholder image">
+                  <h2 class="featurette-heading">Oh yeah, it's that good. <span class="muted">See for yourself.</span></h2>
+            <p class="lead" style="font-size:16px">Donec ullamcorper nulla non metus auctor fringilla.</p>
+        
+          </div>
+        </div>
+        <div class="span4">
+          <div class="featurette">
         
           <img class="featurette-image  pull-left img-responsive" src="data:image/png;base64," data-src="holder.js/150x150/auto" alt="Generic placeholder image">
                   <h2 class="featurette-heading">Oh yeah, it's that good. <span class="muted">See for yourself.</span></h2>
-          <p class="lead" style="margin-left:170px">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        
-      </div>    
-      <hr class="featurette-divider">
-
-      <div class="featurette">
-        
-          <img class="featurette-image  pull-left img-responsive" src="data:image/png;base64," data-src="holder.js/150x150/auto" alt="Generic placeholder image">
-                  <h2 class="featurette-heading">Oh yeah, it's that good. <span class="muted">See for yourself.</span></h2>
-          <p class="lead" style="margin-left:170px">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        
-      </div>    
-      <hr class="featurette-divider">  
-      
-      <div class="featurette">
+          <p class="lead" style="font-size:16px">Donec ullamcorper nulla non metus auctor fringilla.</p>
+          </div>
+       </div>
+        <div class="span4">
+          <div class="featurette">
         
           <img class="featurette-image  pull-left img-responsive" src="data:image/png;base64," data-src="holder.js/150x150/auto" alt="Generic placeholder image">
                   <h2 class="featurette-heading">Oh yeah, it's that good. <span class="muted">See for yourself.</span></h2>
-          <p class="lead" style="margin-left:170px">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          <p class="lead" style="font-size:16px">Donec ullamcorper nulla non metus auctor fringilla.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="span4">
+          <div class="featurette">
         
-      </div>    
-      <hr class="featurette-divider">  
+            <img class="featurette-image  pull-left img-responsive" src="data:image/png;base64," data-src="holder.js/150x150/auto" alt="Generic placeholder image">
+                  <h2 class="featurette-heading">Oh yeah, it's that good. <span class="muted">See for yourself.</span></h2>
+            <p class="lead" style="font-size:16px">Donec ullamcorper nulla non metus auctor fringilla.</p>
+        
+          </div>
+        </div>
+        <div class="span4">
+          <div class="featurette">
+        
+          <img class="featurette-image  pull-left img-responsive" src="data:image/png;base64," data-src="holder.js/150x150/auto" alt="Generic placeholder image">
+                  <h2 class="featurette-heading">Oh yeah, it's that good. <span class="muted">See for yourself.</span></h2>
+          <p class="lead" style="font-size:16px">Donec ullamcorper nulla non metus auctor fringilla.</p>
+          </div>
+       </div>
+        <div class="span4">
+          <div class="featurette">
+        
+          <img class="featurette-image  pull-left img-responsive" src="data:image/png;base64," data-src="holder.js/150x150/auto" alt="Generic placeholder image">
+                  <h2 class="featurette-heading">Oh yeah, it's that good. <span class="muted">See for yourself.</span></h2>
+          <p class="lead" style="font-size:16px">Donec ullamcorper nulla non metus auctor fringilla.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="span4">
+          <div class="featurette">
+        
+            <img class="featurette-image  pull-left img-responsive" src="data:image/png;base64," data-src="holder.js/150x150/auto" alt="Generic placeholder image">
+                  <h2 class="featurette-heading">Oh yeah, it's that good. <span class="muted">See for yourself.</span></h2>
+            <p class="lead" style="font-size:16px">Donec ullamcorper nulla non metus auctor fringilla.</p>
+        
+          </div>
+        </div>
+        <div class="span4">
+          <div class="featurette">
+        
+          <img class="featurette-image  pull-left img-responsive" src="data:image/png;base64," data-src="holder.js/150x150/auto" alt="Generic placeholder image">
+                  <h2 class="featurette-heading">Oh yeah, it's that good. <span class="muted">See for yourself.</span></h2>
+          <p class="lead" style="font-size:16px">Donec ullamcorper nulla non metus auctor fringilla.</p>
+          </div>
+       </div>
+        <div class="span4">
+          <div class="featurette">
+        
+          <img class="featurette-image  pull-left img-responsive" src="data:image/png;base64," data-src="holder.js/150x150/auto" alt="Generic placeholder image">
+                  <h2 class="featurette-heading">Oh yeah, it's that good. <span class="muted">See for yourself.</span></h2>
+          <p class="lead" style="font-size:16px">Donec ullamcorper nulla non metus auctor fringilla.</p>
+          </div>
+        </div>
+      </div>
       <a class="btn btn-large btn-primary" href="#" style="margin-left:40%;margin-top:40px" >Back</a>  
       <a class="btn btn-large btn-primary" href="#" style="margin-left:90px;margin-top:40px" >Next</a>  
-      <!-- FOOTER -->
+      
       <footer style="margin-top:40px">
         <p class="pull-right" ><a href="#">Back to top</a></p>
         <p>&copy; 2013 Blade Company, Inc. &middot; <a href="AboutUs.html">AboutUs</a></p>
       </footer>
-
     </div><!-- /.container -->
 
 
