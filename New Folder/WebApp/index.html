@@ -307,18 +307,19 @@
             <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
             <div class="nav-collapse collapse">
               <ul class="nav" style="width:90%">
-                <li ><a href="Mypage.html">MyPage</a></li>
+                <li><a href="Mypage.html">MyPage</a></li>
                 <li><a href="Profile.html">Profile</a></li>
                 <li><a href="AboutUs.html">AboutUs</a></li>
                 <!-- Read about Bootstrap dropdowns at http://twbs.github.com/bootstrap/javascript.html#dropdowns -->
                 <li class="dropdown" style="float:right;" >
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Member <b class="caret"></b></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="JavaScript:newPopup('Login.html');">Login</a></li>
-                    <li><a href="Signup.html">Signup</a></li>
-                  </ul>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Member <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="JavaScript:newPopup('Login.html');">Login</a></li>
+                        <li><a href="JavaScript:newPopup('Signup.html');">Signup</a></li>
+                        <li><a href="Signout.html">Signout</a></li>
+                    </ul>
                 </li>
-                <li style="float:right;" style="margin-left:0.5%; margin-bottom:50%;">
+                <li style="float:right;">
                     <form class="navbar-search pull-right">
                         <input type="text" class="search-query" placeholder="Search">
                     </form>
@@ -385,12 +386,12 @@
     <!-- Wrap the rest of the page in another container to center all the content. -->
 
     <div class="container marketing">
-      <a class="btn btn-large btn-primary" href="#" style="margin-left:85%" >NewQuote</a>  
+      <a class="btn btn-large btn-primary" href="NewQuote.html" style="margin-left:85%" >NewQuote</a>  
       <hr class="featurette-divider">
 
       <div class="featurette">
-        
-          <img class="featurette-image  pull-left img-responsive" src="data:image/png;base64," data-src="holder.js/150x150/auto" alt="Generic placeholder image">
+            <a href="JavaScript:newPopup('zoom.html');">
+          <img class="featurette-image  pull-left img-responsive" src="data:image/png;base64," data-src="holder.js/150x150/auto" alt="Generic placeholder image"></a>
                   <h2 class="featurette-heading">Oh yeah, it's that good. <span class="muted">See for yourself.</span></h2>
           <p class="lead" style="margin-left:170px">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
         

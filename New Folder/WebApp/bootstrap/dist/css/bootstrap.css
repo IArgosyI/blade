@@ -1334,6 +1334,7 @@ input,
 textarea,
 .uneditable-input {
   margin-left: 0;
+  width:600px;
 }
 
 .controls-row [class*="span"] + [class*="span"] {

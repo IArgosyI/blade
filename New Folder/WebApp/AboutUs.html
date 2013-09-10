@@ -305,13 +305,18 @@
                 <li><a href="Profile.html">Profile</a></li>
                 <li class="active"><a href="AboutUs.html" class="active">AboutUs</a></li>
                 <!-- Read about Bootstrap dropdowns at http://twbs.github.com/bootstrap/javascript.html#dropdowns -->
-                <li class="dropdown" style="float:right; right:-5%" >
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Member <b class="caret"></b></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="Login.html">Login</a></li>
-                    <li><a href="Signup.html">Signup</a></li>
-                    
-                  </ul>
+                <li class="dropdown" style="float:right;" >
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Member <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="JavaScript:newPopup('Login.html');">Login</a></li>
+                        <li><a href="Signup.html">Signup</a></li>
+                        <li><a href="Signout.html">Signout</a></li>
+                    </ul>
+                </li>
+                <li style="float:right;">
+                    <form class="navbar-search pull-right">
+                        <input type="text" class="search-query" placeholder="Search">
+                    </form>
                 </li>
               </ul>
             </div><!--/.nav-collapse -->
@@ -331,7 +336,7 @@
 <div class="container marketing">
      <!--==profile -->
     <div class="row">
-        <div class="span12" style="margin-top:100px">
+        <div class="span12" style="margin-top:80px">
             <div class="hero-unit">
                 <h1>About US</h1>
                 <p style="margin-top:40px">
