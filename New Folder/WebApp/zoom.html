@@ -21,6 +21,19 @@
       padding-bottom: 40px;
       color: #5a5a5a;
     }
+    
+    .imgBox  { 
+        width:216px; 
+        height:216px; 
+        background-image:url('plain.jpg'); 
+    }
+    
+    .imgText { 
+        text-align:center; 
+        vertical-align:middle;
+        margin:0; 
+        padding:25px 0 0 0; 
+    }
 
 
 
@@ -305,7 +318,11 @@
         <div class="span4">
         </div>
         <div class="span4">
-         <img class="featurette-image  "style="margin-left:auto;margin-right:auto" src="data:image/png;base64," data-src="holder.js/250x250/auto" alt="Generic placeholder image">
+         <a href="JavaScript:newPopup('zoom.html');">
+            <div class="imgBox pull-left">
+                <p class="imgText">Hello World</p>
+            </div>
+        </a>
         </div>
         <div class="span4">
         </div>
@@ -318,6 +335,15 @@
             </div>
     <hr class="featurette-divider">  
        <!--==end of top quote -->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=649512161733998";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    <div class="fb-comments" data-href="http://example.com" data-width="470"></div>
       
     </div><!-- /.container -->
 
